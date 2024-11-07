@@ -6,7 +6,7 @@ function HomePage() {
 
       <div className="textContainer">
         <div className="wrapper">
-          <h1>Find Affordable Home & Get Your Dream Place</h1>
+          <h1>Find Affordable Home & Get Your Living Place</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Provident sapiente totam ducimus id reprehenderit
             dolorum quam rerum, nulla iusto et facilis expedita
