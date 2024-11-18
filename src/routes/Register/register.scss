@@ -1,0 +1,31 @@
+.formContainer{
+
+    display: flex;
+    flex:3;
+    flex-direction: column;
+    
+
+    form{
+        display: flex;
+        flex-direction: column;
+       justify-content: space-between;
+       gap: 10px;
+       align-items: center;
+
+
+       input{
+        height: 34px;
+        border-radius: 5px;
+        padding: 10px;
+        
+
+       }
+    }
+
+}
+
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}

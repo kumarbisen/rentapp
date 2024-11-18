@@ -10,6 +10,7 @@ import {
 import ListPage from "./routes/listPage/listPage";
 import Layout from "./routes/layout/layout";
 import SinglePage from "./routes/singlePage/singlePage";
+import Register from "./routes/Register/register";
 
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
           {
             path:"/list",
             element:<ListPage/>
+          },
+          {
+            path:"/register",
+            element:<Register/>
           },
           {
             path:"/:id",
