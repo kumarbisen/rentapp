@@ -1,0 +1,21 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+
+
+    
+
+    
+
+    form{
+        height: 34px;
+
+        button{
+            cursor: pointer;
+            padding: 10px;
+            height: auto;
+            width: 94px;
+            background-color: #fece51;
+        }
+    }
+}

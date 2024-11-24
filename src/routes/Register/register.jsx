@@ -1,12 +1,15 @@
 import './register.scss'
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
+import Login from '../login/login'
 import axios from 'axios'
 
 
 import { useState } from 'react'
 function Register() {
 
-  const {error, serError} = useState("")
+  const {error, setError} = useState("")
+
+  const navigate = useNavigate()
     // HERE e STAND FOR EVENTS
     const handleSubmit = async (e) =>{
         e.preventDefault()
@@ -24,10 +27,11 @@ function Register() {
             username, email, password
           });
 
-          console.log(res.data)
+          navigate("/login")
         }catch(err){
+          // there is a problem with error response here i'll do it later
+          setError(err.response.data.message)
           console.log(err)
-          //setError()
         }
 
          
@@ -37,10 +41,11 @@ function Register() {
         <div className="formContainer">
         <form onSubmit={handleSubmit}>
             <h1>Create an Account</h1>
-            <input name='username'  type="text" placeholder='Username' />
+            <input name='username' required minLength={3} maxLength={20} type="text" placeholder='Username' />
             <input name='email' type="text" placeholder='Email' />
             <input name='password' type="password" placeholder='Password' />
             <button>Register</button>
+            {error && <span>{error}</span>}
            <Link  to="/login">Do you have an account</Link>
         </form>
 
