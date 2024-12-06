@@ -36,6 +36,10 @@ function App() {
             element:<Register/>
           },
           {
+            path:"/add",
+            element:<Add/>
+          },
+          {
             path:"/login",
             element:<Login/>
           },
