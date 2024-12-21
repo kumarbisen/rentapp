@@ -61,15 +61,15 @@ function SinglePage() {
           </div>
           <p className="title"> Room Sizes</p>
           <div className="listHorizontal">
-            <div className="Sizes">
+            <div className="size">
               <img src="/size.png" alt="#" />
               <span>80sq feet</span>
             </div>
-            <div className="features">
+            <div className="size">
               <img src="/bed.png" alt="#" />
               <span>2 beds</span>
             </div>
-            <div className="features">
+            <div className="size">
               <img src="bath.png" alt="#" />
               <span>1 bathroom</span>
             </div>

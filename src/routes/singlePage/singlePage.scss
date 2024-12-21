@@ -110,12 +110,31 @@
                 width: 24px;
             }
 
-            .feature {
+            .listVertical{
                 display: flex;
-                padding: 1%;
-                flex-direction: column;
+                flex-direction:column;
                 background-color: white;
-                gap:2px;
+                border-radius: 20px;
+                
+            }
+
+            .listHorizontal{
+                display: flex;
+                flex-direction: space-between;
+            }
+
+
+            .feature {
+                padding:5%;
+                background-color: white;
+               
+            }
+
+            
+            .size{
+                display: flex;
+                flex-direction: space-between;
+                gap:20px;
             }
         }
 
