@@ -110,32 +110,57 @@
                 width: 24px;
             }
 
-            .listVertical{
+            .listVertical {
                 display: flex;
-                flex-direction:column;
+                flex-direction: column;
+                
                 background-color: white;
                 border-radius: 20px;
+                padding: 5%;
+
+                .feature {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                   
+                   
+
+                }
+
+
+
+            }
+
+            .sizes {
+                display: flex;
+                justify-content: space-between;
+
+                .size{
+                    
+                    display: flex;
+                    align-items: center;
+                    background-color: white;
+                     gap: 10px;
+                     padding: 10px;
+                    border-radius: 10px;
+
+                }
                 
-            }
-
-            .listHorizontal{
-                display: flex;
-                flex-direction: space-between;
-            }
-
-
-            .feature {
-                padding:5%;
-                background-color: white;
                
+              
+
             }
 
-            
-            .size{
+            .listHorizontal {
                 display: flex;
                 flex-direction: space-between;
-                gap:20px;
             }
+
+
+
+
+
+
         }
 
 

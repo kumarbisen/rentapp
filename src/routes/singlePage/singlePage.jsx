@@ -55,26 +55,30 @@ function SinglePage() {
               <img src="fee.png" alt="#" />
               <div className="featureText">
                 <span>Property fee</span>
-                <p>You must have to pay fee before month start in advance</p>
+                <p>You must have to pay fee (In Advance) </p>
               </div>
             </div>
           </div>
-          <p className="title"> Room Sizes</p>
+          <p className="title">Sizes</p>
           <div className="listHorizontal">
-            <div className="size">
-              <img src="/size.png" alt="#" />
-              <span>80sq feet</span>
-            </div>
-            <div className="size">
-              <img src="/bed.png" alt="#" />
-              <span>2 beds</span>
-            </div>
-            <div className="size">
-              <img src="bath.png" alt="#" />
-              <span>1 bathroom</span>
-            </div>
-          </div>
 
+            <div className="sizes">
+
+              <div className="size">
+                <img src="/size.png" alt="#" />
+                <span>80sq feet</span>
+              </div>
+              <div className="size">
+                <img src="/bed.png" alt="#" />
+                <span>2 beds</span>
+              </div>
+              <div className="size">
+                <img src="bath.png" alt="#" />
+                <span>1 bathroom</span>
+              </div>
+            </div>
+
+          </div>
 
           <p className='title'>Nearby Places</p>
           <div className="listHorizontal">
