@@ -1,21 +1,25 @@
 .singlePage {
     display: flex;
     height: 100%;
-    
+
 
     .details {
         flex: 3;
-        overflow: scroll;
+        overflow-y: scroll;
+        height: 100%;
+        padding-bottom: 10%;
 
         .wrapper {
             padding-right: 50px;
 
             .info {
                 margin-top: 50px;
+
                 .top {
                     display: flex;
-                    flex-direction:space-between;
+                    flex-direction: space-between;
                     gap: 20px;
+
                     .post {
                         display: flex;
                         flex-direction: column;
@@ -27,13 +31,13 @@
                         }
 
                         .address {
-                            display:flex;
+                            display: flex;
                             gap: 5px;
                             align-items: center;
                             color: #888;
                             font-size: 14px;
 
-                            img{
+                            img {
                                 height: 16px;
                                 width: 16px;
                             }
@@ -41,25 +45,26 @@
 
                         .price {
                             padding: 5px;
-                            background-color:rgba(254,205,81,0.438);
+                            background-color: rgba(254, 205, 81, 0.438);
                             border-radius: 5px;
                             width: max-content;
-                            font-size:20px;
+                            font-size: 20px;
                             font-weight: 300;
                         }
                     }
 
                     .user {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 20px;
-                            padding: 10px;
-                            border-radius: 10px;
-                            background-color: rgba(254,205,81,0.208);
-                            font-weight: 600;
-                            cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        background-color: rgba(254, 205, 81, 0.208);
+                        font-weight: 600;
+                        cursor: pointer;
+
                         img {
                             width: 50px;
                             height: 50px;
@@ -85,10 +90,35 @@
     .features {
         flex: 2;
         background-color: #fcf5f3;
+        overflow-y: scroll;
+        height: 100%;
 
 
         .wrapper {
             padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+
+            .title {
+                font-weight: 600;
+            }
+
+            img {
+                height: 24px;
+                width: 24px;
+            }
+
+            .feature {
+                display: flex;
+                padding: 1%;
+                flex-direction: column;
+                background-color: white;
+                gap:2px;
+            }
         }
+
+
     }
 }

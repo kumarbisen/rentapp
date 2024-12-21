@@ -12,6 +12,7 @@ import Layout from "./routes/layout/layout";
 import SinglePage from "./routes/singlePage/singlePage";
 import Register from "./routes/Register/register";
 import Login from "./routes/login/login";
+import add from "./routes/add/add";
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
           },
           {
             path:"/add",
-            element:<Add/>
+            element:<add/>
           },
           {
             path:"/login",

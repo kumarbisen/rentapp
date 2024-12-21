@@ -33,18 +33,18 @@ function Filter() {
         </select>
       </div>
 
-      <div className="item">
+      <div className="item" >
         <label htmlFor="minPrice">MinPrice</label>
         <input type='Number' id='minPrice' name='minPrice' placeholder='any'></input>
       </div>
 
-      <div className="item">
+      <div className="item" >
         <label htmlFor="maxPrice">MaxPrice</label>
         <input type='Number' name="maxPrice" id='maxPrice' placeholder='any'></input>
       </div>
 
 
-      <div className="item">
+      <div className="item" >
         <label htmlFor="bedroom">Bedroom</label>
         <input type='text' id='bedroom' placeholder='any' name='bedroom'></input>
       </div>
