@@ -2,7 +2,7 @@ import Slider from '../../components/slider/Slider'
 import './singlePage.scss'
 import { singlePostData } from '../../lib/dummydata'
 import { userData } from '../../lib/dummydata'
-import map from '../../components/map/map'
+import Map from '../../components/map/map'
 function SinglePage() {
   return (
     <div className='singlePage'>
@@ -60,25 +60,23 @@ function SinglePage() {
             </div>
           </div>
           <p className="title">Sizes</p>
-          <div className="listHorizontal">
+          <div className="sizes">
 
-            <div className="sizes">
-
-              <div className="size">
-                <img src="/size.png" alt="#" />
-                <span>80sq feet</span>
-              </div>
-              <div className="size">
-                <img src="/bed.png" alt="#" />
-                <span>2 beds</span>
-              </div>
-              <div className="size">
-                <img src="bath.png" alt="#" />
-                <span>1 bathroom</span>
-              </div>
+            <div className="size">
+              <img src="/size.png" alt="#" />
+              <span>80sq feet</span>
             </div>
-
+            <div className="size">
+              <img src="/bed.png" alt="#" />
+              <span>2 beds</span>
+            </div>
+            <div className="size">
+              <img src="bath.png" alt="#" />
+              <span>1 bathroom</span>
+            </div>
           </div>
+
+
 
           <p className='title'>Nearby Places</p>
           <div className="listHorizontal">
@@ -109,8 +107,10 @@ function SinglePage() {
 
           <p className="title">Locations</p>
           <div className="mapContainer">
-            <map items={[singlePostData]} />
+            <Map items={[singlePostData]} />
+
           </div>
+
           <div className="buttons">
             <button>
               <img src="chat.png" alt="#" />
@@ -121,6 +121,7 @@ function SinglePage() {
               <span>save property</span>
             </button>
           </div>
+
 
         </div>
       </div>
